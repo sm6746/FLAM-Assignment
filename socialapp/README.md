@@ -51,22 +51,6 @@ The reactive system uses a custom Observable implementation that works like Comb
 ```
 Open http://localhost:8082
 
-## Project Structure
-
-```
-
-src/
-├── components/
-│ ├── feed/ # Feed components
-│ └── ui/ # Reusable UI components
-├── models/ # Data models
-├── viewmodels/ # MVVM ViewModels
-├── services/ # Business logic
-├── plugins/ # Plugin system
-└── pages/ # Page components
-
-```
 
 
 
-```
