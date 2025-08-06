@@ -1,6 +1,34 @@
-#🔥 Flam iOS Assignment Submission
-This repository contains the completed solutions for two selected challenges from the Flam iOS Developer Assignment. Each project follows best practices and highlights critical iOS architecture patterns, modularity, and UI/UX responsiveness.
+#  Flam iOS Assignment Submission
 
-✅ Selected Challenges
-1.🎵 Music Player Service (Challenge 1)
-2.📰 Social Media Feed App (Challenge 3)
+This repository contains the completed solutions for **two selected challenges** from the Flam iOS Developer Assignment. Each project demonstrates clean architecture, modular component design, and responsiveness tailored for a seamless user experience.
+
+---
+
+## ✅ Selected Challenges
+
+###  1. Music Player Service
+A responsive and modular music player built with React and TypeScript, showcasing playback controls, song queue management, and UI interactions similar to native iOS media apps.
+
+**Key Features:**
+- Play/Pause/Seek/Volume Control
+- Song queue and "Now Playing" section
+- Modular React components using TypeScript
+- Styled with Tailwind CSS for responsive design
+
+ **Folder**: [`/musicplayer`](./musicplayer)
+
+---
+
+###  2. Social Media Feed App
+An interactive social feed interface that mimics the modern feed layout of social platforms. Includes features like loading states, error boundaries, and real-time post rendering.
+
+**Key Features:**
+- Feed items with avatar, content, media
+- Pull-to-refresh and loading animations
+- Component-driven architecture
+- Designed for mobile-first responsiveness
+
+ **Folder**: [`/socialapp`](./socialapp)
+
+---
+
