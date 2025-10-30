@@ -1,55 +1,57 @@
 # Social Media Feed App
 
-A Twitter-style social media feed built with React and TypeScript. This project started as a learning exercise for MVVM architecture and evolved into a full-featured feed application.
+This is a Twitter-style social feed built with React + TypeScript and Vite. The app implements an MVVM-inspired structure with a small reactive observable system.
 
-## What I Built
+## Quick start
 
-I wanted to create a social media feed that felt real and responsive. The app includes:
+Using npm:
 
-- **Real-time feed updates** with pull-to-refresh and infinite scrolling
-- **Multiple post types** - text, images, polls, events, and articles
-- **Interactive features** like voting on polls and attending events
-- **Responsive design** that works on mobile and desktop
-- **Offline support** with proper error handling
-
-## Tech Stack
-
-- **Frontend**: React 18 + TypeScript
-- **Styling**: Tailwind CSS + shadcn/ui
-- **Build**: Vite
-- **State Management**: Custom MVVM pattern with reactive observables
-
-## Architecture
-
-I chose MVVM (Model-View-ViewModel) because it keeps the UI separate from business logic. Here's how it's structured:
-
-- **Models**: Data structures and business rules
-- **Views**: React components for the UI
-- **ViewModels**: Handle state and user interactions
-
-The reactive system uses a custom Observable implementation that works like Combine or RxJS.
-
-## Key Features
-
-### Feed Functionality
-
-- Display posts with text, images, and user info
-- Pull-to-refresh with visual feedback
-- Infinite scrolling when you reach the bottom
-- Real-time online/offline status
-
-### Post Types
-
-- **Text posts** with hashtags and mentions
-- **Image posts** with media galleries
-- **Video posts** with thumbnails
-- **Polls** with interactive voting
-- **Events** with attendance tracking
-- **Articles** with rich previews
-- **Quote posts** via plugin system
-
+```powershell
+cd socialapp
+npm install
+npm run dev
 ```
-Open http://localhost:8082
+
+Using bun:
+
+```powershell
+cd socialapp
+bun install
+bun run dev
+```
+
+Open the app at http://localhost:5173 (default Vite port).
+
+## Available scripts
+
+- `dev` — start Vite dev server
+- `build` — build production assets
+- `build:dev` — build in development mode
+- `preview` — preview production build
+- `lint` — run ESLint
+
+## Tech stack
+
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS + shadcn/ui
+
+## Project layout (important folders)
+
+- `src/components/` — UI components (feed, posts, plugins)
+- `src/viewmodels/` — view model hooks and reactive logic
+- `src/services/` — feed service, plugin service, observable service
+- `src/pages/` — top-level pages
+
+## Notes
+
+- Default dev server port is 5173. The previous note referencing port 8082 may reflect a custom configuration — if you need that port, I can add a script or update the Vite config.
+- Use `npm run build` then `npm run preview` to inspect production output.
+
+If you'd like I can add a demo dataset, screenshots, or expand the developer guide.
+
+
+
 
 
 
